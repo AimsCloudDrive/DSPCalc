@@ -131,19 +131,9 @@ export function BatchSetting() {
     <div className="mt-3 d-inline-flex flex-wrap column-gap-3 row-gap-2 align-items-center">
       <small className="fw-bold">批量预设</small>
       {/* 增产剂选择 */}
-      {/* <ProSelector
-        selected={{ num: pro_num, mode: pro_mode }}
-        update={(pro) => {
-          if (!pro) {
-            pro = { num: 0, mode: 0 };
-          }
-          change_pro_num(pro.num);
-          change_pro_mode(pro.mode);
-        }}
-      ></ProSelector> */}
       <DropDown
         options={proOptions}
-        title={"增产剂："}
+        title={""}
         selected={{ num: pro_num, mode: pro_mode }}
         trigger={"click"}
         getIcon={(pro) => {
@@ -168,25 +158,6 @@ export function BatchSetting() {
           change_pro_mode(pro.mode);
         }}
       ></DropDown>
-      {/* <HorizontalMultiButtonSelect choice={pro_num} options={proliferate_options} onChange={change_pro_num} no_gap={true} className={"raw-text-selection"} /> */}
-      {/* 增产剂模式选择 pro_num 0 不使用增产剂 */}
-      {/* {pro_num ? (
-        <Switch
-          checkedChildren={"增产"}
-          unCheckedChildren={"加速"}
-          checked={pro_mode == 2}
-          onChange={(checked) => {
-            if (checked) {
-              // 增产
-              change_pro_mode(2);
-            } else {
-              // 加速
-              change_pro_mode(1);
-            }
-          }}
-        />
-      ) : null} */}
-      {/* <HorizontalMultiButtonSelect choice={pro_mode} options={promode_options} onChange={change_pro_mode} no_gap={true} className={"raw-text-selection"} /> */}
       {/* 设备选择 */}
       {factory_doms}
     </div>
