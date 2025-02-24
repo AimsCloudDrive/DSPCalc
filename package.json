@@ -15,6 +15,7 @@
     "ahooks": "^3.8.4",
     "antd": "^5.17.4",
     "bootstrap": "^5.3.2",
+    "dsp_calculator": "file:",
     "fuzzysort": "^2.0.4",
     "javascript-lp-solver": "^0.4.24",
     "pako": "^2.1.0",
@@ -28,6 +29,10 @@
     "spritesmith": "^3.4.1"
   },
   "devDependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ocean/common": "^0.0.2",
+    "@ocean/reaction": "^0.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-legacy": "^5.4.2",
@@ -36,10 +41,12 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "glob": "^11.0.0",
     "imagemin": "^8.0.1",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^8.0.0",
     "sass": "^1.69.5",
+    "typescript": "^5.7.3",
     "vite": "5.4.6"
   }
 }
